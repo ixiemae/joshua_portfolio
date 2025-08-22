@@ -1,0 +1,128 @@
+
+.about-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 3rem 2rem;
+  min-height: 80vh;
+}
+
+.about-title {
+  font-size: 3rem;
+  color: #ff69b4; 
+  margin-bottom: 3rem;
+  text-align: center;
+  font-weight: 700;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.about-content {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  background: #fff0f5; 
+  border-radius: 16px;
+  padding: 3rem;
+  box-shadow: 0 6px 20px rgba(255, 105, 180, 0.15);
+  border: 2px solid #ff69b4;
+  transition: all 0.3s ease;
+}
+
+.about-content:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 30px rgba(255, 105, 180, 0.2);
+  background: #fff;
+}
+
+.about-image {
+  width: 350px;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 5px solid #ff69b4;
+  box-shadow: 0 4px 15px rgba(255, 105, 180, 0.2);
+}
+
+.about-text {
+  flex: 1;
+}
+
+.about-text p {
+  font-size: 1.2rem;
+  color: #555;
+  line-height: 1.7;
+  margin-bottom: 1.5rem;
+}
+.about-text ul{
+  font-size: 1.2rem;
+  color: #555;
+  line-height: 1.7;
+  margin-bottom: 1.5rem;
+}
+
+.about-text h2 {
+  font-size: 1.8rem;
+  color: #333;
+  margin: 2rem 0 1rem;
+  border-bottom: 2px solid #ff69b4;
+  padding-bottom: 0.5rem;
+  display: inline-block;
+}
+
+@media (max-width: 1200px) {
+  .about-image {
+    width: 300px;
+    height: 300px;
+  }
+}
+
+@media (max-width: 992px) {
+  .about-content {
+    padding: 2.5rem;
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .about-title {
+    margin-bottom: 2rem;
+  }
+  
+  .about-text h2 {
+    margin-top: 1.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-title {
+    font-size: 2.5rem;
+  }
+  
+  .about-image {
+    width: 250px;
+    height: 250px;
+  }
+  
+  .about-text p {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .about-container {
+    padding: 2rem 1rem;
+  }
+  
+  .about-content {
+    padding: 2rem 1.5rem;
+    border-radius: 12px;
+  }
+  
+  .about-image {
+    width: 200px;
+    height: 200px;
+    border-width: 4px;
+  }
+  
+  .about-text h2 {
+    font-size: 1.6rem;
+  }
+}

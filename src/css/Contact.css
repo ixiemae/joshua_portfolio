@@ -1,0 +1,138 @@
+
+.contact {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 3rem 2rem;
+  min-height: 80vh;
+}
+
+.contact h1 {
+  font-size: 3rem;
+  color: #ff69b4; 
+  margin-bottom: 3rem;
+  text-align: center;
+  font-weight: 700;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.contact-container {
+  background: #fff0f5;
+  border-radius: 16px;
+  padding: 3rem;
+  box-shadow: 0 6px 20px rgba(255, 105, 180, 0.15);
+  border: 2px solid #ff69b4;
+  max-width: 800px;
+  margin: 0 auto;
+  transition: all 0.3s ease;
+}
+
+.contact-container:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 30px rgba(255, 105, 180, 0.2);
+  background: #fff;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.contact-info h3 {
+  font-size: 1.8rem;
+  color: #333;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid #ff69b4;
+  padding-bottom: 0.5rem;
+  display: inline-block;
+}
+
+.contact-info p {
+  font-size: 1.2rem;
+  color: #555;
+  line-height: 1.7;
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.contact-info strong {
+  color: #ff69b4;
+  min-width: 100px;
+  display: inline-block;
+}
+
+.contact-info a {
+  color: #333;
+  text-decoration: none;
+  transition: all 0.2s ease;
+  border-bottom: 1px dashed #ff69b4;
+  padding-bottom: 2px;
+}
+
+.contact-info a:hover {
+  color: #ff69b4;
+  border-bottom-style: solid;
+}
+
+.social-links a {
+  background-color: #ff69b4;
+  color: white !important;
+  padding: 0.5rem 1.2rem;
+  border-radius: 50px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  margin-right: 0.8rem;
+  border: none !important;
+  transition: all 0.2s ease;
+  display: inline-block;
+}
+
+.social-links a:hover {
+  background-color: #ff1493;
+  transform: scale(1.05);
+  box-shadow: 0 2px 5px rgba(255, 105, 180, 0.3);
+}
+
+@media (max-width: 992px) {
+  .contact-container {
+    padding: 2.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .contact h1 {
+    font-size: 2.5rem;
+  }
+  
+  .contact-info p {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.3rem;
+  }
+  
+  .contact-info strong {
+    margin-bottom: 0.3rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .contact {
+    padding: 2rem 1rem;
+  }
+  
+  .contact-container {
+    padding: 2rem 1.5rem;
+    border-radius: 12px;
+  }
+  
+  .contact-info h3 {
+    font-size: 1.6rem;
+  }
+  
+  .social-links a {
+    display: block;
+    margin-bottom: 0.8rem;
+    width: fit-content;
+  }
+}
